@@ -4,9 +4,11 @@ Yafin is a gem to pull quotes from Yahoo finance.
 
 == Usage
 
-y = Yafin.new
+`y = Yafin.new
+
 quotes = y.get_latest_quotes(["goog", "aapl"])
-historical_quotes = y.get_historical_quotes("goog", "2011", "2", "1", "2011", "3", "1")
+
+historical_quotes = y.get_historical_quotes("goog", "2011", "2", "1", "2011", "3", "1")`
 
 Syntax is symbol, start_year=2000, start_month=1, start_day=1, to_year=2012, to_month=1, to_day=1
 
