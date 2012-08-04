@@ -29,7 +29,8 @@ Gem::Specification.new do |s|
     "lib/yafin/historical_quote.rb",
     "lib/yafin/quote.rb",
     "spec/spec_helper.rb",
-    "spec/yafin_spec.rb"
+    "spec/yafin_spec.rb",
+    "yafin.gemspec"
   ]
   s.homepage = "http://github.com/pbjorklund/yafin"
   s.licenses = ["MIT"]
