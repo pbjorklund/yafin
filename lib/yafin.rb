@@ -1,4 +1,5 @@
 require 'csv'
+require 'net/http'
 
 class Yafin
   def get_latest_quotes symbols
@@ -43,3 +44,5 @@ class Yafin
   end
 end
 
+require 'yafin/quote'
+require 'yafin/historical_quote'
