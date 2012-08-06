@@ -6,15 +6,19 @@ Yafin is a gem to pull quotes from Yahoo finance.
 Usage
 -----
 
+Get the latest quotes for an array of stock symbols
 ```ruby
-y = Yafin.new
-
-quotes = y.get_latest_quotes(["goog", "aapl"])
-
-historical_quotes = y.get_historical_quotes("goog", "2011", "2", "1", "2011", "3", "1")
+Yafin::Fetcher.get_latest_quotes(["goog", "aapl"])
 ```
 
-Syntax is symbol, start_year=2000, start_month=1, start_day=1, to_year=2012, to_month=1, to_day=1
+Get historical quotes for a stock symbol
+```ruby
+Yafin::Fetcher.get_historical_quotes("goog")
+
+Yafin::Fetcher.get_historical_quotes("goog", { start_year: 2011, start_month: 2, start_day: 1 } )
+
+Yafin::Fetcher.get_historical_quotes("goog", { start_year: 2011, start_month: 2, start_day: 1 }, { to_year: 2011, to_month: 2, to_day: 2 } )
+```
 
 Quotes is an array of Yafin::Quote and historical_quotes is an array of Yafin::Historical_quotes
 
